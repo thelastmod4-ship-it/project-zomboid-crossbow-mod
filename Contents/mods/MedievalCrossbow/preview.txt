@@ -1,0 +1,17 @@
+IMPORTANTE: Você precisa criar uma imagem preview.png de 256x256 pixels.
+
+Instruções para criar o preview:
+
+1. Crie uma imagem 256x256 pixels em qualquer editor (Photoshop, GIMP, Paint.NET, etc)
+2. Desenhe ou coloque uma imagem de uma besta medieval
+3. Salve como preview.png
+4. Coloque na pasta: Contents/mods/MedievalCrossbow/
+
+A imagem deve ser PNG e ter exatamente 256x256 pixels.
+
+Opções:
+- Use um gerador de IA (Stable Diffusion, Midjourney) com prompt: "medieval crossbow pixel art 256x256"
+- Baixe uma imagem livre de direitos autorais e redimensione para 256x256
+- Crie uma imagem simples no Paint
+
+Sem o preview.png, o mod não aparecerá no Steam Workshop!
