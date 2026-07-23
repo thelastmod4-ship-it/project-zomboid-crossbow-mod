@@ -1,0 +1,14 @@
+This mod is designed for Project Zomboid Build 42.19 and later.
+
+Install Instructions:
+1. Subscribe to the mod on Steam Workshop OR
+2. Place the MedievalCrossbow folder in your Zomboid/mods/ directory
+3. Enable the mod when creating a new world
+
+The mod adds:
+- Medieval Crossbow (2-handed ranged weapon)
+- Medieval Arrows (reusable ammunition)
+- Crafting recipes for both items
+
+Author: thelastmod4-ship-it
+GitHub: https://github.com/thelastmod4-ship-it/project-zomboid-crossbow-mod
