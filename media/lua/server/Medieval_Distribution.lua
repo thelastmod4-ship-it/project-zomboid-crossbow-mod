@@ -1,24 +1,38 @@
--- Medieval Crossbow Mod - Item Distribution
+-- Medieval Crossbow Mod - Item Distribution para B42.19
 
-require "Items/ProceduralDistributions"
+require "Items/SuburbsDistribution"
 
--- Adicionar besta em lojas de armas
-table.insert(ProceduralDistributions.list["gunstore"].items, "CrossbowMedieval")
-ProceduralDistributions.list["gunstore"].items[#ProceduralDistributions.list["gunstore"].items] = 5
-
--- Adicionar besta em lojas de esportes
-if ProceduralDistributions.list["sportinggoods"] then
-    table.insert(ProceduralDistributions.list["sportinggoods"].items, "CrossbowMedieval")
-    ProceduralDistributions.list["sportinggoods"].items[#ProceduralDistributions.list["sportinggoods"].items] = 5
+local function addDistributions()
+    -- Lojas de armas
+    if SuburbsDistribution.GunStore then
+        table.insert(SuburbsDistribution.GunStore, "CrossbowMedieval")
+        table.insert(SuburbsDistribution.GunStore, "MedievalArrow")
+    end
+    
+    -- Lojas de esportes
+    if SuburbsDistribution.SportingGoods then
+        table.insert(SuburbsDistribution.SportingGoods, "CrossbowMedieval")
+        table.insert(SuburbsDistribution.SportingGoods, "MedievalArrow")
+    end
+    
+    -- Casas residenciais
+    if SuburbsDistribution.Bedroom then
+        table.insert(SuburbsDistribution.Bedroom, "MedievalArrow")
+    end
+    
+    if SuburbsDistribution.Garage then
+        table.insert(SuburbsDistribution.Garage, "CrossbowMedieval")
+    end
+    
+    -- Cabanas de caça (se existir)
+    if SuburbsDistribution.HuntingCabin then
+        table.insert(SuburbsDistribution.HuntingCabin, "CrossbowMedieval")
+        table.insert(SuburbsDistribution.HuntingCabin, "MedievalArrow")
+    end
 end
 
--- Adicionar flechas em vários locais
-if ProceduralDistributions.list["bedroomstyle"] then
-    table.insert(ProceduralDistributions.list["bedroomstyle"].items, "MedievalArrow")
-    ProceduralDistributions.list["bedroomstyle"].items[#ProceduralDistributions.list["bedroomstyle"].items] = 3
-end
-
-if ProceduralDistributions.list["garagestyle"] then
-    table.insert(ProceduralDistributions.list["garagestyle"].items, "CrossbowMedieval")
-    ProceduralDistributions.list["garagestyle"].items[#ProceduralDistributions.list["garagestyle"].items] = 2
+if Events then
+    Events.OnGameBoot.Add(addDistributions)
+else
+    addDistributions()
 end

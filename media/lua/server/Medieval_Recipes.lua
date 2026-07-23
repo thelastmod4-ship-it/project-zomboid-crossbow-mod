@@ -1,12 +1,14 @@
--- Medieval Crossbow Mod - Crafting Recipes
+-- Medieval Crossbow Mod - Crafting Recipes para B42.19
 
-require "Recipes/Recipes_Common"
+require "Recipes/Recipes"
 
-local function RegisterArrowCrafting()
+local function registerArrowRecipe()
+    if not Recipes then return end
+    
     local recipe = Recipe.new()
     recipe.name = "Craft Medieval Arrows"
     recipe.description = "Fabricar Flechas Medievais"
-    recipe.category = "Crafting"
+    recipe.category = "Archery"
     recipe.difficulty = 40
     recipe.time = 300
     recipe.character = true
@@ -52,11 +54,13 @@ local function RegisterArrowCrafting()
     table.insert(Recipes, recipe)
 end
 
-local function RegisterCrossbowCrafting()
+local function registerCrossbowRecipe()
+    if not Recipes then return end
+    
     local recipe = Recipe.new()
     recipe.name = "Craft Medieval Crossbow"
     recipe.description = "Fabricar Besta Medieval"
-    recipe.category = "Crafting"
+    recipe.category = "Archery"
     recipe.difficulty = 60
     recipe.time = 1200
     recipe.character = true
@@ -112,5 +116,10 @@ local function RegisterCrossbowCrafting()
     table.insert(Recipes, recipe)
 end
 
-RegisterArrowCrafting()
-RegisterCrossbowCrafting()
+if Events then
+    Events.OnGameBoot.Add(registerArrowRecipe)
+    Events.OnGameBoot.Add(registerCrossbowRecipe)
+else
+    registerArrowRecipe()
+    registerCrossbowRecipe()
+end
