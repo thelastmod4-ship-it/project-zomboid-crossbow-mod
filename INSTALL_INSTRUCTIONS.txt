@@ -1,0 +1,23 @@
+IMPORTANTE: Estrutura corrigida para Project Zomboid B42.19
+
+Esta é a estrutura correta para instalar o mod:
+
+1. Copie a pasta 'MedievalCrossbow' para: Zomboid/mods/
+
+2. A estrutura deve ficar assim:
+   Zomboid/mods/MedievalCrossbow/
+   ├── mod.info (OBRIGATÓRIO)
+   ├── preview.png (256x256 PNG - OBRIGATÓRIO)
+   ├── media/
+   │   └── lua/
+   │       ├── shared/Medieval_Items.lua
+   │       └── server/
+   │           ├── Medieval_Recipes.lua
+   │           └── Medieval_Distribution.lua
+   └── README.md
+
+3. IMPORTANTE: O mod.info DEVE estar na raiz de MedievalCrossbow, NÃO em uma subpasta!
+
+4. Você precisa criar um arquivo preview.png (256x256 pixels) e colocá-lo ao lado do mod.info
+
+5. Reinicie o Project Zomboid e o mod deve aparecer na lista de mods!

@@ -1,4 +1,4 @@
-# Medieval Crossbow Mod para Project Zomboid B42.19
+# Medieval Crossbow Mod para Project Zomboid B42.19+
 
 Um mod que adiciona uma besta medieval funcional com sistema de flechas ao Project Zomboid.
 
@@ -10,7 +10,7 @@ Um mod que adiciona uma besta medieval funcional com sistema de flechas ao Proje
 - **Recarga Realista**: Velocidade de ataque apropriada para um arco/besta
 - **Distribuição em Loot**: Encontre em lojas de armas, esportes e casas
 
-## 📶 Especificações
+## 📋 Especificações
 
 ### Besta Medieval
 - **Dano**: 6.0 - 8.5
@@ -26,7 +26,7 @@ Um mod que adiciona uma besta medieval funcional com sistema de flechas ao Proje
 - **Máx. Pilha**: 60 unidades
 - **Reutilizável**: Sim
 
-## 💾 Crafting
+## 🔧 Crafting
 
 ### Fabricar Flechas Medievais
 - **Materiais**: Cabo de Flecha (1x) + String (1x)
@@ -49,28 +49,22 @@ Um mod que adiciona uma besta medieval funcional com sistema de flechas ao Proje
 
 ## 📦 Instalação
 
-1. Baixe ou clone este repositório
-2. Copie a pasta `project-zomboid-crossbow-mod` para:
-   ```
-   C:\Users\[SEU_USER]\Zomboid\mods\
-   ```
-   (ou `~/Zomboid/mods/` no Linux/Mac)
+### Steam Workshop
+Procure por "Medieval Crossbow Mod" e inscreva-se.
 
-3. Renomeie a pasta para `MedievalCrossbow` (opcional mas recomendado)
+### Instalação Manual
+1. Clone ou baixe: https://github.com/thelastmod4-ship-it/project-zomboid-crossbow-mod
+2. Copie a pasta `MedievalCrossbow` para `Zomboid/mods/`
+3. Inicie o Project Zomboid
+4. Na seleção de mundo → "Mods"
+5. Procure por "Medieval Crossbow Mod" e ative
+6. Crie seu mundo e aproveite!
 
-4. Inicie o Project Zomboid
-
-5. Na tela de seleção de mundo, clique em "Mods"
-
-6. Procure por "Medieval Crossbow Mod" e ative-o
-
-7. Crie seu mundo e aproveite!
-
-## 👨‍💻 Versão Suportada
+## ⚙️ Versão Suportada
 
 - **Build 42.19+** (Project Zomboid)
 
-## 👋 Autor
+## 👨‍💻 Autor
 
 thelastmod4-ship-it
 

@@ -1,4 +1,4 @@
--- Medieval Crossbow Mod - Crafting Recipes para B42.19
+-- Medieval Crossbow Mod - Crafting Recipes para B42.19+
 
 require "Recipes/Recipes"
 

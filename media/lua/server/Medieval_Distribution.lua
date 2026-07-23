@@ -1,4 +1,4 @@
--- Medieval Crossbow Mod - Item Distribution para B42.19
+-- Medieval Crossbow Mod - Item Distribution para B42.19+
 
 require "Items/SuburbsDistribution"
 
@@ -22,12 +22,6 @@ local function addDistributions()
     
     if SuburbsDistribution.Garage then
         table.insert(SuburbsDistribution.Garage, "CrossbowMedieval")
-    end
-    
-    -- Cabanas de caça (se existir)
-    if SuburbsDistribution.HuntingCabin then
-        table.insert(SuburbsDistribution.HuntingCabin, "CrossbowMedieval")
-        table.insert(SuburbsDistribution.HuntingCabin, "MedievalArrow")
     end
 end
 
