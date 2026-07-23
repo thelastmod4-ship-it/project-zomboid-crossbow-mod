@@ -1,0 +1,10 @@
+name=Medieval Crossbow Mod
+id=MedievalCrossbow
+pack_id=MedievalCrossbow
+version=1.0.0
+poster=poster.png
+description=Um mod que adiciona uma besta medieval poderosa e flechas reutilizáveis ao Project Zomboid. Inclui crafting, dano escalável e munição reutilizável.
+author=thelastmod4-ship-it
+url=https://github.com/thelastmod4-ship-it/project-zomboid-crossbow-mod
+require=
+modversion=2
